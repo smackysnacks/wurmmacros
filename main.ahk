@@ -14,7 +14,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Drink()
 {
-    ImageSearch x, y, 0, 0, %A_ScreenWidth%, %A_ScreenHeight%, *TransBlack *40 % Assets.TEXTIMG_WATER
+    ImageSearch x, y, 0, 0, %A_ScreenWidth%, %A_ScreenHeight%, % "*TransBlack *40 " . Assets.TEXTIMG_WATER
     if (x) {
         MouseMove x, y
         MouseClick right

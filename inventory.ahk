@@ -11,7 +11,7 @@ class Inventory
 
     Expand()
     {
-        if (!IsOpen()) {
+        if (!this.IsOpen()) {
             Send {f3}
             Sleep % LAG_FACTOR*150
             WinActivate ahk_class LWJGL
