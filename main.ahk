@@ -27,6 +27,11 @@ Drink()
     }
 }
 
+^e::
+	inv := new Inventory()
+	inv.Expand()
+return
+
 ^d::
     Drink()
 return
