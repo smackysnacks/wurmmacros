@@ -8,7 +8,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #include %A_ScriptDir%
 
 #include config.ahk
+#include debug.ahk
 #include inventory.ahk
+#include crafting.ahk
 #include assets.ahk
 
 
@@ -30,6 +32,10 @@ Drink()
 ^e::
 	inv := new Inventory()
 	inv.Expand()
+return
+
+^f::
+    KeyWait LButton
 return
 
 ^d::

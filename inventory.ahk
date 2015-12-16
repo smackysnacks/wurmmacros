@@ -9,10 +9,15 @@ class Inventory
         return (x && y)
     }
 
+    Open()
+    {
+        Send {f3}
+    }
+
     Expand()
     {
         if (!this.IsOpen()) {
-            Send {f3}
+            this.Open()
             Sleep % LAG_FACTOR*500
         }
 
